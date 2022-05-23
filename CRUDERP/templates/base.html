@@ -13,14 +13,17 @@
   </head>
   <body>
 
-    <!-- CREAR SECCION DE HOME - MENU CON LOS "{% url 'inicio' %}", PUEDE NAVEGAR EL EL SITIO WEB--> 
-    <nav class="navbar navbar-expand navbar-light bg-light">
-        <div class="nav navbar-nav">
-            <a class="nav-item nav-link active" href="{% url 'inicio' %}">Inicio </a>
-            <a class="nav-item nav-link active" href="{% url 'libros' %}">Libros </a>
-            <a class="nav-item nav-link active" href="{% url 'nosotros' %}">Nosotros </a>
-        </div>
-    </nav>
+    <!-- CREAR SECCION DE HOME - MENU CON LOS "{% url 'inicio' %}", PUEDE NAVEGAR EL EL SITIO WEB-->     
+      <nav class="navbar navbar-expand navbar-light bg-light" >
+          <div class="nav navbar-nav">
+              <a class="nav-item nav-link active" href="{% url 'inicio' %}"></a>            
+              <a class="nav-item nav-link active" href="{% url 'producto' %}">CRUD Producto</a>            
+              <a class="nav-item nav-link active" href="{% url 'productoReceta' %}">CRUD Producto_Receta</a>            
+              <a class="nav-item nav-link active" href="{% url 'receta' %}">CRUD Receta</a>            
+              <a class="nav-item nav-link active" href="{% url 'stock' %}">CRUD Stock</a>            
+          </div>
+      </nav>
+    </center>    
 
 
   <!--CREAR CONTAINER -->
