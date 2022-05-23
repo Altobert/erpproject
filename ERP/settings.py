@@ -77,14 +77,14 @@ WSGI_APPLICATION = 'ERP.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Taller_BD',
+        'NAME': 'erp',
         'OPTIONS': {
-        'options': '-c search_path=erp'
-            },
+            'options': '-c search_path=erp'
+        },
         'USER': 'postgres',
-        'PASSWORD': 'Rentokil123',
+        'PASSWORD': '270980',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
         #'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': BASE_DIR / 'db.sqlite3',
     }
