@@ -1,1 +1,49 @@
-<h2>CRUD Producto</h2>
+<!--
+    <h2>CRUD Producto</h2>
+-->
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Registros de Tabla Producto</title>  
+     <!--
+          {% load staticfiles %} 
+          <link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+     -->    
+</head>  
+<body>  
+<table class="table table-striped table-bordered table-sm">  
+    <thead class="thead-dark">  
+    <tr>  
+        <th>idProducto</th>
+        <th>idUnidadMedida</th>
+        <th>idStock</th>
+        <th>Codigo Producto</th>
+        <th>Nombre Producto</th>
+        <th>Nombre Producto Proveedor</th>
+        <th>Codigo Producto Proveedor</th>
+        <th>Nombre Proveedor</th>
+        <th>Estado_Producto</th>        
+        <th>Acciones</th>  
+    </tr>  
+    </thead>  
+    <tbody>  
+            {% for employee in employees %}  
+    <tr>  
+        <td>{{ employee.eid }}</td>  
+        <td>{{ employee.ename }}</td>  
+        <td>{{ employee.eemail }}</td>  
+        <td>{{ employee.econtact }}</td>  
+        <td>  
+            <a href="/edit/{{ employee.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>  
+            <a href="/delete/{{ employee.id }}">Delete</a>  
+        </td>  
+    </tr>  
+{% endfor %}  
+    </tbody>  
+</table>  
+<br>  
+<br>  
+<center><a href="/emp" class="btn btn-primary">Add New Record</a></center>  
+</body>  
+</html>  
