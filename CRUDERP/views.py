@@ -1,5 +1,9 @@
-from django.shortcuts import render
+
+
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from .models  import Producto
+  
 # Create your views here.
 
 def inicio(request):
@@ -23,3 +27,8 @@ def productoReceta(request):
 
 def stock(request):
     return render(request, "stock.html")
+
+
+def mostrarProducto(request):  
+    employees = Employee.objects.all()  
+    return render(request,"show.html",{'employees':employees})  
